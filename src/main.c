@@ -2,8 +2,8 @@
 // Contents: Main Driver
 
 #define _CRT_SECURE_NO_WARNINGS
-#include "atto-C.h"
-FILE *sourcefile; 
+#include "../inc/atto-C.h"
+FILE *sourcefile;
 FILE *asmfile;
 
 
@@ -15,7 +15,7 @@ char **argv: a pointer to a list of strings, one string for each word
              argv[0] is the command name, argv[1] is the first argument,
              and so on.  argv[argc] is set to a null pointer.
 */
-main(int argc, char **argv) {
+int main(int argc, char **argv) {
 
     if (!argc == 2) {
         printf("\nMissing source file on command line\n"); exit(0);
@@ -48,4 +48,5 @@ main(int argc, char **argv) {
     preamble(argv[1]); //Create asm header
     program();
     postamble(); //Add "END" to asm
+    return 0;
 }

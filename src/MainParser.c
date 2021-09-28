@@ -3,7 +3,7 @@
 
 
 #define _CRT_SECURE_NO_WARNINGS
-#include "atto-C.h"
+#include "../inc/atto-C.h"
 
 int lookahead;
 void program(void);

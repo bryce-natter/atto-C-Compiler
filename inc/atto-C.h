@@ -1,5 +1,8 @@
-// File: lexer.c
-// Contents: headerfile for lexer
+// File: atto-c.h
+// Contents: headerfile
+
+#ifndef _ATTO_C_H_
+#define _ATTO_C_H_
 #pragma once
 
 
@@ -150,5 +153,6 @@ extern FILE *sourcefile;
 extern FILE *asmfile;
 void preamble(char *sourcefilename);
 void postamble(void);
+void program(void);
 
-
+#endif

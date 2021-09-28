@@ -1,7 +1,7 @@
 // File: symbol_table.c
 
 
-#include "atto-C.h"
+#include "../inc/atto-C.h"
 
 
 struct symbol_t symbol_table[MAXSYMBOL];
@@ -11,7 +11,7 @@ int symbol_stack_top;
 struct symbol_t *push_symbol(char *name)
 {
     symbol_stack_top++;
-    strncpy_s(symbol_table[symbol_stack_top].name,IDENT_MAX_LENGTH, name, IDENT_MAX_LENGTH);
+    strncpy(symbol_table[symbol_stack_top].name, name, IDENT_MAX_LENGTH);
     return symbol_table + symbol_stack_top;
 }
 

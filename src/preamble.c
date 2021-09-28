@@ -1,7 +1,7 @@
 // File: preamble.c
 // Contents: Contains Preamble, used to generate correct ASM code preabmle
 
-#include "atto-C.h"
+#include "../inc/atto-C.h"
 
 
 void preamble(char *sourcefilename)

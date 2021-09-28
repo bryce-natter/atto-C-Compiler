@@ -3,7 +3,7 @@
 
 
  // Finite State Machine states
-#include "atto-C.h"
+#include "../inc/atto-C.h"
 
 #define FINAL_STATE         0
 #define START_STATE         1
